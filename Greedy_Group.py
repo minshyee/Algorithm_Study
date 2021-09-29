@@ -14,7 +14,7 @@ for i in range(n):
         for i in range(n-t):
             if t-c == fear[t-1]:
                 group+= 1
-                c+= fear[t]-1
+                c+= fear[t]
                 break
 
             else:
