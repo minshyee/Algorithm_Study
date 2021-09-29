@@ -16,8 +16,7 @@ if m> 0:
         else:
             result+= alist[1]
             count= k       
-        print("result: ", result, "\tcount: ", count)
-
+  
 if k>m or m<0:
     print('올바르지 못한 입력값입니다.')
 else:
