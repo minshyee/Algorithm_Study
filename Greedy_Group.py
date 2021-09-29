@@ -8,9 +8,18 @@ group= 0
 c= 0
 
 for i in range(n):
-    if fear[c]< n-c:
-        group+= 1
-        c+= fear[c]
+    if fear[c]<= n-c:
+        t= fear[c]
+        
+        for i in range(n-t):
+            if t-c == fear[t-1]:
+                group+= 1
+                c+= fear[t]-1
+                break
+
+            else:
+                t+=1
+
     else:
         break
 
