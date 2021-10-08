@@ -22,14 +22,3 @@ def solution(n, lost, reserve):
                 
             
     return n- check.count(-1)
-
-
-
-#전체 학생수: n, 도난당한 학생 리스트: lost, 여분 체육복 학생 리스트: reserve
-
-
-n= int(input())
-lost= list(map(int, input().split()))
-reserve= list(map(int, input().split()))
-
-print(solution(n, lost, reserve), )
