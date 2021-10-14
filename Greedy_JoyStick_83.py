@@ -41,7 +41,7 @@ def solution(name):
         for i in range(len(name)):
                 
             if ind in aIndList:
-                if move(aIndList.index(ind), name, way)>= ind- 1 or len(name)-ind >ind: 
+                if move(ind, name, way)>= ind or len(name)-ind >ind: 
                     lrMove+= ind- 2
                     ind= len(name)
                     way=-1
